@@ -14,7 +14,9 @@
 This is the official implementation of our paper [DocRes: A Generalist Model Toward Unifying Document Image Restoration Tasks](https://arxiv.org/abs/2405.04408).
 
 ## News 
-🔥 [2025.6] Beyond GPT-4o, we evaluate more SOTA image generators' image generation abilities in various document processing tasks. Check [here](https://github.com/NiceRingNode/Awesome-Image-Generators-for-OCR-Image-Generation-and-Editing)! 🔥
+🔥 [2025.7] Our paper ["Aesthetics is Cheap, Show me the Text: An Empirical Evaluation of State-of-the-Art Generative Models for OCR"](https://arxiv.org/abs/2507.15085), which conducts a comprehensive evaluation of SOTA generative models has been online at arXiv. 🔥
+
+🔥 [2025.6] Beyond GPT-4o, we evaluate more SOTA generative models' image generation abilities in various document processing tasks. Check [here](https://github.com/NiceRingNode/Awesome-Image-Generators-for-OCR-Image-Generation-and-Editing)! 🔥
 
 🎉 [2025.5] We evaluate the image generation ability of GPT-4o, including various document processing tasks. Check [here](https://github.com/NiceRingNode/Awesome-Image-Generators-for-OCR-Image-Generation-and-Editing)! 🔥
 
