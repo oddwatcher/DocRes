@@ -74,7 +74,7 @@ def net1_net2_infer_single_im(img,model_path):
                     freeze_bn=False)
     seg_model = torch.nn.DataParallel(seg_model, device_ids=range(torch.cuda.device_count()))
     seg_model.cuda()
-    checkpoint = torch.load(model_path)
+    checkpoint = torch.load(model_path,weights_only=True)
     seg_model.load_state_dict(checkpoint['model_state'])
     ### validate on the real datasets
     seg_model.eval()
@@ -142,7 +142,7 @@ if __name__ == '__main__':
                     freeze_bn=False)
     seg_model = torch.nn.DataParallel(seg_model, device_ids=range(torch.cuda.device_count()))
     seg_model.cuda()
-    checkpoint = torch.load(args.seg_model_path)
+    checkpoint = torch.load(args.seg_model_path,weights_only=True)
     seg_model.load_state_dict(checkpoint['model_state'])
 
     im_paths = glob.glob(os.path.join(args.img_folder,'*_origin.*'))

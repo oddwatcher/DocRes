@@ -286,9 +286,9 @@ def model_init(args):
     )
 
     if DEVICE.type == 'cpu':
-        state = convert_state_dict(torch.load(args.model_path, map_location='cpu')['model_state'])
+        state = convert_state_dict(torch.load(args.model_path, map_location='cpu',weights_only=True)['model_state'])
     else:
-        state = convert_state_dict(torch.load(args.model_path, map_location='cuda:0')['model_state'])    
+        state = convert_state_dict(torch.load(args.model_path, map_location='cuda:0',weights_only=True)['model_state'])    
     model.load_state_dict(state)
 
     model.eval()
